@@ -1,6 +1,16 @@
-package day5;
+package day6;
 
 class Car {
+    void info() {
+        System.out.println("Это автомобиль");
+    }
+
+    int yearDifference(int inputYear) {
+        int dif = Math.abs(inputYear - Age);
+        System.out.println(dif);
+        return dif;
+    }
+
     private int Age;
     private String color;
     private String model;
@@ -30,15 +40,3 @@ class Car {
     }
 }
 
-public class Task1 {
-    public static void main(String[] args) {
-        Car car1 = new Car();
-        car1.setAge(1997);
-        car1.setColor("Белый");
-        car1.setModel("БМВ");
-        System.out.println("Год выпуска " + car1.getAge());
-        System.out.println("Цвет модели " + car1.getColor());
-        System.out.println("Модель машины " + car1.getModel());
-
-    }
-}
