@@ -12,6 +12,7 @@ public class Teacher extends Human {
         this.subjectName = subjectName;
 
     }
+
     @Override
     public void printInfo() {
         System.out.println("Этот человек с именем " + name);
